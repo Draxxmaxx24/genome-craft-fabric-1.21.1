@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "genomecraft",
-	"version": "${version}",
+	"version": "1.0.0",
 	"name": "GenomeCraft",
 	"description": "This is my modern take on the old Advanced Genetics mod.",
 	"authors": [
