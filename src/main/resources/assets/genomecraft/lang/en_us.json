@@ -1,0 +1,7 @@
+{
+  "item.genomecraft.empty_syringe": "Empty Syringe",
+  "item.genomecraft.filled_syringe_contaminated": "Filled Syringe (Contaminated)",
+  "item.genomecraft.filled_syringe_clean": "Filled Syringe (Clean)",
+
+  "itemgroup.genomecraft.genomecraft_items": "GenomeCraft Items"
+}

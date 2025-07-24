@@ -1,18 +1,18 @@
 {
 	"schemaVersion": 1,
-	"id": "genome-craft",
+	"id": "genomecraft",
 	"version": "${version}",
-	"name": "Genome Craft",
+	"name": "GenomeCraft",
 	"description": "This is my modern take on the old Advanced Genetics mod.",
 	"authors": [
 		"Draxxmaxx24!"
 	],
 	"contact": {
 		"homepage": "https://draxxmaxx24.com/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Draxxmaxx24/genome-craft-fabric-1.21.1"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/genome-craft/icon.png",
+	"icon": "assets/genomecraft/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -26,7 +26,7 @@
 		]
 	},
 	"mixins": [
-		"genome-craft.mixins.json"
+		"genomecraft.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.14",
