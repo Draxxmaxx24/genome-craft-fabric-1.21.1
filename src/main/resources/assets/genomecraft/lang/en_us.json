@@ -11,6 +11,10 @@
   "item.genomecraft.empty_syringe": "Empty Syringe",
 
   "tooltip.genomecraft.organic_waste.tooltip": "§7I wouldn't drink that if I were you...§r",
+  "tooltip.genomecraft.contaminatedsyringe.captured_entity": "Captured: ",
+  "tooltip.genomecraft.contaminatedsyringe.no_entity": "No captured entity.",
+
+  "message.genomecraft.empty_syringe_fail": "§4This item cannot be used on this mob!§r",
 
   "itemgroup.genomecraft.genomecraft_items": "GenomeCraft Items"
 }

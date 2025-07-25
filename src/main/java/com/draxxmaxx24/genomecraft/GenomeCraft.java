@@ -1,5 +1,7 @@
 package com.draxxmaxx24.genomecraft;
 
+import com.draxxmaxx24.genomecraft.component.ComponentChecker;
+import com.draxxmaxx24.genomecraft.component.ModDataComponentTypes;
 import com.draxxmaxx24.genomecraft.item.ModItemGroups;
 import com.draxxmaxx24.genomecraft.item.ModItems;
 import com.draxxmaxx24.genomecraft.util.ModLootTableModifiers;
@@ -18,6 +20,8 @@ public class GenomeCraft implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 
 		ModItems.registerModItems();
+
+		ModDataComponentTypes.registerDataComponentTypes();
 
 		ModLootTableModifiers.modifyLootTables();
 	}
