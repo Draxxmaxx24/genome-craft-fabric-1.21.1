@@ -1,7 +1,16 @@
 {
-  "item.genomecraft.empty_syringe": "Empty Syringe",
   "item.genomecraft.filled_syringe_contaminated": "Filled Syringe (Contaminated)",
   "item.genomecraft.filled_syringe_clean": "Filled Syringe (Clean)",
+  "item.genomecraft.crushed_blaze_rod": "Crushed Blaze Rod",
+  "item.genomecraft.crushed_breeze_rod": "Crushed Breeze Rod",
+  "item.genomecraft.wither_bone": "Wither Bone",
+  "item.genomecraft.crushed_wither_bone": "Crushed Wither Bone",
+  "item.genomecraft.crushed_bone": "Crushed Bone",
+
+  "item.genomecraft.organic_waste": "Organic Waste",
+  "item.genomecraft.empty_syringe": "Empty Syringe",
+
+  "tooltip.genomecraft.organic_waste.tooltip": "§7I wouldn't drink that if I were you...§r",
 
   "itemgroup.genomecraft.genomecraft_items": "GenomeCraft Items"
 }

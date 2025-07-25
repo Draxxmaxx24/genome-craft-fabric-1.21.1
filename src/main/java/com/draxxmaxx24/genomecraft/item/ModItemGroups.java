@@ -15,9 +15,17 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.FILLED_SYRINGE_CLEAN))
                     .displayName(Text.translatable("itemgroup.genomecraft.genomecraft_items"))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModItems.EMPTY_SYRINGE);
+
                         entries.add(ModItems.FILLED_SYRINGE_CONTAMINATED);
                         entries.add(ModItems.FILLED_SYRINGE_CLEAN);
-                        entries.add(ModItems.EMPTY_SYRINGE);
+                        entries.add(ModItems.CRUSHED_BLAZE_ROD);
+                        entries.add(ModItems.CRUSHED_BREEZE_ROD);
+                        entries.add(ModItems.CRUSHED_BONE);
+                        entries.add(ModItems.CRUSHED_WITHER_BONE);
+                        entries.add(ModItems.WITHER_BONE);
+
+                        entries.add(ModItems.ORGANIC_WASTE);
                     }).build());
 
 

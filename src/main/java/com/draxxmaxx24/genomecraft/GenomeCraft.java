@@ -1,6 +1,8 @@
 package com.draxxmaxx24.genomecraft;
+
 import com.draxxmaxx24.genomecraft.item.ModItemGroups;
 import com.draxxmaxx24.genomecraft.item.ModItems;
+import com.draxxmaxx24.genomecraft.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -16,5 +18,7 @@ public class GenomeCraft implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 
 		ModItems.registerModItems();
+
+		ModLootTableModifiers.modifyLootTables();
 	}
 }
