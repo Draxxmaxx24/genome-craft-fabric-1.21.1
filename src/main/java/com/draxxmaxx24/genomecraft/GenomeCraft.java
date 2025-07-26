@@ -1,6 +1,5 @@
 package com.draxxmaxx24.genomecraft;
 
-import com.draxxmaxx24.genomecraft.component.ComponentChecker;
 import com.draxxmaxx24.genomecraft.component.ModDataComponentTypes;
 import com.draxxmaxx24.genomecraft.item.ModItemGroups;
 import com.draxxmaxx24.genomecraft.item.ModItems;

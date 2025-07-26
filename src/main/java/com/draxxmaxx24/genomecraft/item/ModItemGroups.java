@@ -16,8 +16,8 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.genomecraft.genomecraft_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.EMPTY_SYRINGE);
-
                         entries.add(ModItems.FILLED_SYRINGE_CONTAMINATED);
+
                         entries.add(ModItems.FILLED_SYRINGE_CLEAN);
                         entries.add(ModItems.CRUSHED_BLAZE_ROD);
                         entries.add(ModItems.CRUSHED_BREEZE_ROD);

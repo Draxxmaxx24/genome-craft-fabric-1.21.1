@@ -10,7 +10,6 @@ import net.minecraft.registry.Registries;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -43,16 +42,29 @@ public class FilledSyringeContaminatedItem extends Item {
         Identifier entityId = getCapturedEntityId(stack);
 
         if (entityId != null) {
-            EntityType<?> entityType = Registries.ENTITY_TYPE.get(entityId);
+            String path = entityId.getPath();
 
             Text label = Text.translatable("tooltip.genomecraft.contaminatedsyringe.captured_entity")
                     .styled(style -> style.withColor(Formatting.GRAY).withItalic(true));
 
-            Text entityName = entityType != null
-                    ? entityType.getName().copy().styled(style -> style.withColor(Formatting.AQUA).withBold(true))
-                    : Text.literal(entityId.toString()).styled(style -> style.withColor(Formatting.DARK_RED));
+            if (path.startsWith("player_")) {
 
-            tooltip.add(label.copy().append(entityName));
+                String playerName = path.substring("player_".length());
+
+                Text playerText = Text.literal(playerName)
+                        .styled(style -> style.withColor(Formatting.GREEN).withBold(true));
+
+                tooltip.add(label.copy().append(playerText));
+            } else {
+
+                EntityType<?> entityType = Registries.ENTITY_TYPE.get(entityId);
+
+                Text entityName = entityType != null
+                        ? entityType.getName().copy().styled(style -> style.withColor(Formatting.AQUA).withBold(true))
+                        : Text.literal(entityId.toString()).styled(style -> style.withColor(Formatting.DARK_RED));
+
+                tooltip.add(label.copy().append(entityName));
+            }
         } else {
             tooltip.add(Text.translatable("tooltip.genomecraft.contaminatedsyringe.no_entity")
                     .styled(style -> style.withColor(Formatting.DARK_GRAY).withItalic(true)));
